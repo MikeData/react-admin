@@ -50,16 +50,17 @@ const SidebarMenu = () => {
     const { collapseSidebar, collapsed } = useProSidebar();
 
     return (
-        <Box sx={{ border: 0 }} > 
+        <Box sx={{ border: 0, height: "100%", backgroundColor: colors.primary[400] }} > 
             <Sidebar 
                 collapsed={collapsed}
-                width = "210px" 
+                width = "210px"
                 collapsedWidth = "80px"
-                backgroundColor={colors.primary[400]} 
+                backgroundColor={colors.primary[400]}
+                border = "0" 
 
                 >
                 
-                <Menu iconShape="square" >
+                <Menu iconShape="square" border="0" >
                     {/* LOGO AND MENU ICON */}
                     <MenuItem
                         onClick={() => {
@@ -99,7 +100,7 @@ const SidebarMenu = () => {
                     </MenuItem>
 
                     {/* MENU ELEMENTS */}
-                    <Box paddingLeft={collapsed ? undefined : "0%"}>
+                    <Box border={"0px"} paddingLeft={collapsed ? undefined : "0%"}>
                         <Item
                             title="Dashboard"
                             to="/"
@@ -112,35 +113,7 @@ const SidebarMenu = () => {
                             color={colors.grey[300]}
                             sx={{ m: "25px 0 5px 15px" }}
                         >
-                            ÁREA PERSONAL
-                        </Typography>
-                        <Item
-                            title="Perfil"
-                            to="/perfil"
-                            icon={<PersonOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="Aprender"
-                            to="/aprender"
-                            icon={<SchoolOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="Wallet"
-                            to="/wallet"
-                            icon={<AccountBalanceWalletOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Typography
-                            variant="h6"
-                            color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 15px" }}
-                        >
-                            ESPACIO COMÚN
+                            GESTIÓN TRIBU
                         </Typography>
                         <Item
                             title="Tribu"
@@ -170,63 +143,6 @@ const SidebarMenu = () => {
                             selected={selected}
                             setSelected={setSelected}
                         />
-                        <Typography
-                            variant="h6"
-                            color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 15px" }}
-                        >
-                            MICELIO UNIVERSAL
-                        </Typography>
-                        <Item
-                            title="Mnemoteca"
-                            to="/mnemoteca"
-                            icon={<LocalLibraryOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="Gráficos"
-                            to="/graficos"
-                            icon={<TimelineOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="Mapas"
-                            to="/mapas"
-                            icon={<MapOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Typography
-                            variant="h6"
-                            color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 15px" }}
-                        >
-                            CONTRIBUIR
-                        </Typography>
-                        <Item
-                            title="Apoyar"
-                            to="/apoyar"
-                            icon={<AccessibilityNewOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="Contacto"
-                            to="/contacto"
-                            icon={<ConnectWithoutContactOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-                        <Item
-                            title="FAQ"
-                            to="/faq"
-                            icon={<HelpOutlineOutlinedIcon />}
-                            selected={selected}
-                            setSelected={setSelected}
-                        />
-
                     </Box>
                 </Menu>
             </Sidebar>

@@ -10,12 +10,14 @@ import SidebarMenu from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import Tribu from "./scenes/tribu";
 import Chat from "./scenes/chats";
+import Tablon from "./scenes/tablon";
+import Calendario from "./scenes/calendario";
 /* import Perfil from "./scenes/perfil";
 import Aprender from "./scenes/aprender";
 import Wallet from "./scenes/wallet";
-import Tablon from "./scenes/tablon";
 
-import Calendario from "./scnees/calendario";
+
+
 import Mnemoteca from "./scenes/mnemoteca";
 import Graficos from "./scenes/graficos";
 import Mapas from "./scenes/mapas";
@@ -44,15 +46,17 @@ function App() {
                   <Route exact path="/" element={<Dashboard />} />
                   <Route path="/tribu" element={<Tribu />} />
                   <Route path="/chats" element={<Chat />} />
+                  <Route path="/tablon" element={<Tablon />} />
+                  <Route path="/calendario" element={<Calendario />} /> 
                   {/**
                   <Route path="/perfil" element={<Perfil />} />
                   <Route path="/aprender" element={<Aprender />} />
                   <Route path="/wallet" element={<Wallet />} />
                  
                   <Route path="/tribu" element={<Tribu />} />
-                  <Route path="/tablon" element={<Tablon />} />
+                  
 
-                  <Route path="/calendario" element={<Calendario />} /> 
+                  
                   
                  
                   <Route path="/mnemoteca" element={<Mnemoteca />} />
