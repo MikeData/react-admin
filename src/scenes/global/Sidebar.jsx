@@ -137,6 +137,13 @@ const SidebarMenu = () => {
                             setSelected={setSelected}
                         />
                         <Item
+                            title="Encuestas"
+                            to="/encuestas"
+                            icon={<ContactsOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                        />
+                        <Item
                             title="Calendario"
                             to="/calendario"
                             icon={<CalendarTodayOutlinedIcon />}

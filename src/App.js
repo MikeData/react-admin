@@ -12,6 +12,7 @@ import Tribu from "./scenes/tribu";
 import Chat from "./scenes/chats";
 import Tablon from "./scenes/tablon";
 import Calendario from "./scenes/calendario";
+import Encuestas from "./scenes/encuestas";
 /* import Perfil from "./scenes/perfil";
 import Aprender from "./scenes/aprender";
 import Wallet from "./scenes/wallet";
@@ -47,7 +48,8 @@ function App() {
                   <Route path="/tribu" element={<Tribu />} />
                   <Route path="/chats" element={<Chat />} />
                   <Route path="/tablon" element={<Tablon />} />
-                  <Route path="/calendario" element={<Calendario />} /> 
+                  <Route path="/calendario" element={<Calendario />} />
+                  <Route path="/encuestas" element={<Encuestas />} />  
                   {/**
                   <Route path="/perfil" element={<Perfil />} />
                   <Route path="/aprender" element={<Aprender />} />

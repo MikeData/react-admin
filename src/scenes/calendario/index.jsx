@@ -17,6 +17,15 @@ import {
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
 
+/**
+ * 
+ *  - ADD Initial Values from db --> graphql 
+ *  - ADD Saving events to db --> graphql
+ * 
+ */
+
+
+
 const Calendar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);

@@ -34,7 +34,7 @@ const CanalDeTexto = () => {
 
   
   return (
-     <pre> {} </pre>
+     <pre> {console.log(JSON.stringify(data))} </pre>
   );
 };
 
