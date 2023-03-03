@@ -5,26 +5,14 @@ query getUserChats($include: [Int] = 10) {
   users(where: {include: $include}) {
     edges {
       node {
-        name
-        databaseId
         user_fields {
           chats {
             ... on Chat {
-              databaseId
               chat_fields {
                 nombre
                 registro
               }
             }
-          }
-        }
-      }
-    }
-    nodes {
-      mensajes(where: {}) {
-        edges {
-          node {
-            id
           }
         }
       }

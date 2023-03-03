@@ -29,13 +29,13 @@ const CanalDeTexto = () => {
     });
   }, []);
 
-  if (!data) return "No data!"
-  
-
+  if (!data) return "No data!";
   
   return (
-     <pre> {console.log(JSON.stringify(data))} </pre>
+   
+     <pre> {data[0].acf.registro}  </pre>
   );
+
 };
 
 export default CanalDeTexto;
